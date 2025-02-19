@@ -9,15 +9,40 @@
     <script>
 
 /*
+        operatory porównania:
+        > - większe
+        < - mniejszer
+        >= - większe bądź równe 
+        <= - mniejsze bądź równe
+        == - równe
+        === - równe
 
 */
 
 
 
-var numberfromuser;
-numberfromuser = 5;
-if (numberfromuser > 0)
-document.writeln("Liczba jest dodatnia")
+function task1()
+{
+    var numberfromuser;
+    numberfromuser = -5;
+
+    if (numberfromuser >= 0)
+    {
+        document.writeln("liczba jest dodatnia <br/>")
+    }
+
+    if (numberfromuser < 0)
+        document.writeln("Liczba jest ujemna <br/>")
+
+    if (numberfromuser >= 0 )
+        document.writeln("Liczba jest dodatnia <br/>")
+    else
+        document.writeln("Liczba jest ujemna <br/>")
+
+}
+
+task1();
+
     </script>
 </body>
 </html>
