@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>070425</title>
+</head>
+<body>
+    <div id="firstdiv"> to jest jakis div z zawartoscia</div>
+<script>
+document.write("pełna ścieżka: " + window.location.href + "<br/>")
+
+document.write("protokół: " + location.protocol + "<br/>")
+
+var firstdiv = document.getElementById("firstdiv")
+alert(firstdiv.innerText);
+firstdiv.innerText = "Tekst zamieniony";
+
+
+</script>
+
+
+</body>
+</html>
