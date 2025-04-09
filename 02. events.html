@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+
+        function changetext()
+        {
+
+            var firstdiv = document.getElementById("firstDiv");
+            firstdiv.innerText += " Nowy tekst";
+
+        }
+        function task2()
+        {
+
+            var inputtext = document.getElementById("inputText")
+            var outputDiv = document.getElementById("outputDiv")
+            outputDiv.innerText = inputtext.value
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Kliknij mnie" onclick="alert('kliknięto mnie')"/>
+    <div>To jest div z zawartoscia</div>
+    <input type="button" value="Podmień zawartość" onclick="changetext()"/>
+    <br/>
+    Podaj daną:
+    <br/>
+    <input type="text"/>
+    <br/>
+    <input type="button" value="pobierz"/>
+    <br/>
+    <div></div>
+</body>
+</html>
