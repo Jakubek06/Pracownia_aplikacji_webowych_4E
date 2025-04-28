@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+const IconSwitcher = () => {
+    let o = 0;
+    let x = 0;
+    o++;
+
+    if (o % 2 != 0) {
+        document.getElementById("icon").src = "icon-on.png";
+
+        console.log(o + x);
+    } else {
+        document.getElementById("icon").src = "icon-off.png";
+
+        console.log(o + x);
+    }
+}
+
+const ImageSwitcher = (argv) => {
+
+    if (argv == "lanzarotte") {
+        document.getElementById("StubAnnotation").src = "lanzarotte.jpg";
+    } else
+        if (argv == "pekin") {
+            document.getElementById("StubAnnotation").src = "pekin.jpg";
+        } else
+            if (argv == "serengeti") {
+                document.getElementById("StubAnnotation").src = "serengeti.jpg";
+            } else
+                if (argv == "tajlandia") {
+                    document.getElementById("StubAnnotation").src = "tajlandia.jpg";
+                } else
+                    if (argv == "wenecja") {
+                        document.getElementById("StubAnnotation").src = "wenecja.jpg";
+                    }
+}
+
+
+
+    </script>
+
+
+<body>
+    <div class="wrapper">
+        <div class="baner">
+            <h2>Galeria miejsc ciekawych</h2>
+        </div>
+        <div class="main">
+            <img id="StubAnnotation" class="StubAnnotation" src="/xdd.jpg" alt="galeria">
+        </div>
+        <div class="left">
+            <h3> Przeglądaj zdjęcia</h3>
+            <img onclick="ImageSwitcher('lanzarotte')" id="lanzarotte" class="CallbackTask" src="/xdd.jpg"
+                alt="lanzarotte">
+            <img onclick="ImageSwitcher('pekin')" id="pekin" class="CallbackTask" src="/xddddd.jpg" alt="pekin">
+            <img onclick="ImageSwitcher('serengeti')" id="serengeti" class="CallbackTask" src="serengeti.jpg"
+                alt="serengeti">
+            <img onclick="ImageSwitcher('wenecja')" id="wenecja" class="CallbackTask" src="wenecja.jpg" alt="wenecja">
+            <img onclick="ImageSwitcher('tajlandia')" id="tajlandia" class="CallbackTask" src="tajlandia.jpg"
+                alt="tajlandia">
+        </div>
+        <div class="right">
+            <h3>Obrazy w naszej galerii</h3>
+
+            <table>
+                <tr>
+                    <td>Europa</td>
+                    <td>Azja</td>
+                    <td>Afryka</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <p>Polub nas
+                <img src="icon-off.png" alt="ikona" id="icon" onclick="IconSwitcher()"></p>
+            <br>
+            <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+        </div>
+    </div>
+
+</body>
+</html>
